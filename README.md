@@ -5,6 +5,11 @@ The Pizza Ordering App is a mobile application designed to simplify the process 
 - Java
 - SQlite db
 
+## Admin Login
+-use this email and password to login as admin
+##### Email: admin@gmail.com
+##### Password: admin123
+
 ## Screenshots
 
 <div>
