@@ -1,0 +1,43 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_add_admin"
+            android:icon="@drawable/adduser"
+            android:title="Add Admin" />
+
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/cata"
+            android:title="View All Orders" />
+
+        <item
+            android:id="@+id/nav_sales"
+            android:icon="@drawable/pricetag"
+            android:title="Add Special Offers" />
+
+        <item
+            android:id="@+id/wallet"
+            android:icon="@drawable/wallet"
+            android:title="Wallet" />
+
+    </group>
+
+    <item android:title="Utility">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/user22"
+                android:title="Profile" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logouts"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

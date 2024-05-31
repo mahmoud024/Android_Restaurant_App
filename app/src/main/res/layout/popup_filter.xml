@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/card_background"
+    android:elevation="10dp"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_marginBottom="30dp"
+        android:text="Filter By" />
+
+    <!-- Price Range Slider -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price Range" />
+
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/rangeSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:valueFrom="0.0"
+        android:valueTo="30.0"
+        android:stepSize="1.0"
+        app:values="@array/initial_slider_values" />
+
+
+    <!-- Category Selection -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/categoryRadioGroup"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_chicken"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chicken" />
+
+            <RadioButton
+                android:id="@+id/radio_veggies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Veggies" />
+
+            <RadioButton
+                android:id="@+id/radio_beef"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Beef" />
+
+            <RadioButton
+                android:id="@+id/radio_others"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mushrooms" />
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</LinearLayout>

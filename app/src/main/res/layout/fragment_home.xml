@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/textViewAboutUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="About Us"
+        android:textColor="@color/purple"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/textViewHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular_font"
+            android:gravity="center_horizontal"
+            android:text="Welcome to Pizza Restaurant, where we blend tradition with innovation to create a delightful culinary experience for our patrons. Established 2024, we take pride in our rich history of serving the finest, handcrafted pizzas made with love and the freshest ingredients. Our journey began with a simple passion for crafting exceptional pizzas, and today."
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+    </ScrollView>
+
+</LinearLayout>
